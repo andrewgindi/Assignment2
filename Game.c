@@ -11,7 +11,7 @@
 // second to player 1, the third to player 2, the fourth to player 3,
 // the fifth to player 0, and so on until each player has 7 cards.
 Game newGame(int deckSize, value values[], color colors[], suit suits[]) {
-  
+	
 }
 
 // Destroy an existing game.
@@ -19,7 +19,7 @@ Game newGame(int deckSize, value values[], color colors[], suit suits[]) {
 // This should free all existing memory used in the game including
 // allocations for players and cards.
 void destroyGame(Game game) {
-
+	free(game);
 }
 
 // The following functions can be used by players to discover
@@ -27,7 +27,7 @@ void destroyGame(Game game) {
 
 // Get the number of cards that were in the initial deck.
 int numCards(Game game) {
-
+	
 }
 
 // Get the number of cards in the initial deck of a particular
